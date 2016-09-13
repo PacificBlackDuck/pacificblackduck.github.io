@@ -1,8 +1,0 @@
-https://sevenwestmedia01-i.akamaihd.net/hls/live/224813/MEL1/master.m3u8 Channel 7
-https://sevenwestmedia01-i.akamaihd.net/hls/live/224826/MEL2/master.m3u8 Channel 7Two
-https://sevenwestmedia01-i.akamaihd.net/hls/live/224839/MEL3/master.m3u8 Channel 7Mate
-https://9nowch9livehls-i.akamaihd.net/hls/live/250962/melbourne/master.m3u8 Channel 9
-https://9nowgemlivehls-i.akamaihd.net/hls/live/250972/melbourne/master.m3u8 Gem 
-https://9nowgolivehls-i.akamaihd.net/hls/live/250977/melbourne/master.m3u8 Go!
-https://9nowlifelivehls-i.akamaihd.net/hls/live/250992/melbourne/master.m3u8 Live
-http://iphonestreaming.abc.net.au/news24/news24.m3u8 ABC News
