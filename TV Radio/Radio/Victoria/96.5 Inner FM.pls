@@ -1,0 +1,1 @@
+Error: Could not locate Centova Cast system files.  Please check your settings in /home/rightcli/public_html/streamer2/config.php.

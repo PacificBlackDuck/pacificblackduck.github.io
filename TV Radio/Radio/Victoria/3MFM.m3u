@@ -1,0 +1,5 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:-1
+#EXTINF:-1,stream 2
+http://203.191.167.127:88/broadwave.mp3?src=1&rate=1tle1=3mfmngth1=7200eload1=10bFile1=0mberOfEntries=1rsion=2&ref=http%3A%2F%2Fwww.australianliveradio.com%2F
+#EXT-X-ENDLIST
