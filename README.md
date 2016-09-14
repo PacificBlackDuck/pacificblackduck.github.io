@@ -1,1 +1,2 @@
-This is a website thing that I made for fun.
+#This is a website thing that I made for fun.
+isn't it amazing?
