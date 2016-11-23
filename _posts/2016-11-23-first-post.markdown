@@ -4,7 +4,7 @@ title:  "First Post"
 date:   2016-11-23
 categories: jekyll
 highlight: true
-image: https://fredodonnellphotography.files.wordpress.com/2013/03/p3225393-pacific-black-duck.jpg
+image: http://birdlife.org.au/images/sized/images/uploads/bird_profiles/Pacific-Black-as580s-580x340.jpg
 author: James
 ---
 This is my first post.
