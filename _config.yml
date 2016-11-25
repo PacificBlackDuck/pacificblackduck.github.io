@@ -17,6 +17,9 @@ more_vert:
   option1:
     name: Flappy Duck
     link: flappyduck
+  option2:
+    name: Games
+    link: games.htm
 
 disqus: false
 disqus_shortname: 'gdgmanagua'
