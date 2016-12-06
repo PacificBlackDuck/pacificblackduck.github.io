@@ -1,46 +1,27 @@
-#New Age Jekyll theme
-=========================
+# [Start Bootstrap](http://startbootstrap.com/) - [Creative](http://startbootstrap.com/template-overviews/creative/)
 
-## If you are a company and you're going to use the blog: 
-1. contact bootstrap start up and ask.
-2. contact me because there is to remove some useless part.
+[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-Jekyll theme based on [New Age bootstrap theme ](https://startbootstrap.com/template-overviews/new-age/)
+## Getting Started
 
-# Demo
-View this jekyll theme in action [here](https://jekynewage.github.io/)
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/creative/)
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
+* Fork the repo
 
-## Built by
-[Antonio Trento](https://it.linkedin.com/in/antoniotrento)
+## Bugs and Issues
 
-This Jekyll template was created to develop, landing pages, squeeze pages, portfolio and blog or all the above.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
 
-###I integrated analytical tools and marketing such as:
-- Google Ad Words
-- Google analytics
-- Disqus comment system
-- Add This social sharing
+## Creator
 
->>External stylesheets and libraries included are Google Fonts, Font Awesome, Normalize.CSS, and WOW.js
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-In order to set your log data to applications _config.yml just open the file and find the associated items.
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-I also built a system to add their own names on the same company files
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-**To change the base colors yellow go in css folder there main.css where you can set the primary color and the secondary color, remember that the theme is gradient in the background areas**
+## Copyright and License
 
-
-If you are interested in implementing this theme please contact me without any problems I will do what is in my power to help you!
-
-If you have noticed anything unusual or errors in my development I ask you kindly let me know or send a pull request!
-
-Any opinion and critical comment is welcome! So give us inside!
-
-We can get in touch by:
-
-1. By <a href="https://twitter.com/lantoniotrento">twitter</a>
-2. mail <a href="mailto:lantoniotrento@gmail.com">lantoniotrento[at]gmail.com</a>
-3. Via <a href="https://it.linkedin.com/in/antoniotrento">LinkedIn</a>
-
-=========
-For more details, read the [documentation](http://jekyllrb.com/)
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.

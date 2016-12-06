@@ -1,8 +1,8 @@
 {
-  "name": "new-age",
-  "title": "New Age",
-  "version": "3.3.7",
-  "homepage": "http://startbootstrap.com/template-overviews/new-age",
+  "name": "creative",
+  "title": "Creative",
+  "version": "3.3.7+1",
+  "homepage": "http://startbootstrap.com/template-overviews/creative",
   "author": "Start Bootstrap",
   "license": {
     "type": "MIT",
@@ -18,13 +18,12 @@
     "gulp-less": "^3.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
+    "jquery": "^1.11.3",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "^3.1.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
-  },
-  "dependencies": {
-    "simple-line-icons": "^2.3.2"
+    "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
   }
 }
