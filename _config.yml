@@ -1,10 +1,10 @@
 # Site settings
-title: Antonio Trento, theme Jeky New Age, the start Bootstrap themplate build for jekyll
-email:
+title: Duck Group
+email: James@duckgroup.xyz
 description: A jekyll template for landing pages, portfolio and blogging
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "https://jekynewage.github.io" # the base hostname & protocol for your site
+url: "https://duckgroup.xyz" # the base hostname & protocol for your site
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 data-ad-slot: 2973388149
@@ -18,11 +18,9 @@ disqus_account: jeky-new-age
 # Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
 social:
   - title: twitter
-    url: https://twitter.com/lantoniotrento
-  - title: facebook
-    url: https://facebook.com/lantoniotrento
+    url: https://twitter.com/decoratedbug
   - title: google-plus
-    url: https://plus.google.com/+AntoniotrentoIt
+    url: https://plus.google.com/+James_T_likes_sushi
   #- title: github
   #  url: http://github.com/jekyll
 
