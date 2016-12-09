@@ -11,6 +11,11 @@
     <meta name="author" content="James">
 	<meta name="theme-color" content="#007dff">
 	<link rel="icon" sizes="192x192" href="squareduck.png">
+	<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
 
     <title>Duck Group</title>
 
@@ -118,7 +123,7 @@
                     <a href="http://discord.me/duck" class="page-scroll btn btn-default btn-xl sr-button">Join The Discord Server</a>
 					<hr class="light">
 					</div>
-				<iframe src="https://discordapp.com/widget?id=177014532705615872&theme=dark" width="350" height="500" allowtransparency="true" align="middle" frameborder="0"></iframe>
+				<iframe src="https://discordapp.com/widget?id=177014532705615872&theme=dark" height="500px" onload="resizeIframe(this)" allowtransparency="true" align="middle" frameborder="0"></iframe>
             </div>
         </div>
     </section>
