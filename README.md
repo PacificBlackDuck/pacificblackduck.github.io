@@ -1,2 +1,2 @@
 # Duck Group
-a website thing that i made with: https://github.com/BlackrockDigital/startbootstrap-creative
+![alt text](https://discordapp.com/api/guilds/177014532705615872/widget.png?style=banner2)
