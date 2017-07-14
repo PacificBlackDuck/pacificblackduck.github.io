@@ -4,3 +4,6 @@ bower_components
 *.db
 *.db
 Thumbs.db
+*.db
+*.db
+ducks/Thumbs.db
