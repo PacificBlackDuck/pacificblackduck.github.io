@@ -13,20 +13,6 @@
      <meta name="author" content="James">
 	   <meta name="theme-color" content="#007dff">
      <link rel="icon" sizes="192x192" href="img/duckicon.png">
-
-     <script type="text/javascript" src="//quack.duckgroup.xyz:8080/count.json"></script>
-             <script type="text/javascript" >
-                function load() {
-                     var mydata = JSON.parse(data);
-                     console.log(mydata);
-
-                     var div = document.getElementById('count');
-                     {
-                        div.innerHTML = div.innerHTML + "<h5 style='color:white;'>"+ mydata[0].count +"</h5>";
-                     }
-                 }
-        </script>
-
      <style>
      .noselect{
        user-select: none;
@@ -38,9 +24,7 @@
      </style>
    </head>
 
-   <body onload="load()" style="margin:0; background-color:#236b25;">
-
-        <div style="position:absolute;left:12vw;right:12vw;color:white;" id="count" class="card orange center-align"></div>
+   <body style="margin:0; background-color:#236b25;">
 
      <header id="home" style="background-image:url('img/quack512.jpg');height: 100vh;background-size:cover;background-repeat:no-repeat;background-position:center;">
        <div class="center-align noselect slideInDown animated"><img class="" src="img/duckgroup.png" style="width:800px;max-width:99%;padding-top:100px;"><br><img src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield"></div>
