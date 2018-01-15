@@ -1,230 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+   <head>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <title>Duck Group - A Group For Ducks</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+     <meta content="utf-8" http-equiv="encoding">
+     <meta name="theme-color" content="#1b2838">
+     <link rel="icon" sizes="192x192" href="img/duckicon.png">
+     <style>
+     .noselect{
+       user-select: none;
+       pointer-events: none;
+     }
+     h1{
+       font-weight:600;
+     }
+     </style>
+   </head>
 
-<head>
+   <body style="margin:0; background-color:#236b25;">
+     <header style="background-image:url('img/quack512.jpg');height: 100vh;background-size:cover;background-repeat:no-repeat;background-position:center;">
+       <div class="center-align noselect"><img src="img/duckgroup.png" style="width:800px;max-width:99%;padding-top:100px;"><br><img src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield"></div>
+       <div style="position: absolute;bottom:30;left:0;right:0;-webkit-animation-duration: 6s;" class="center-align animated bounce infinite" style=""><a href="#discord" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">arrow_downward</i></a></div>
+     </header>
+     <section style="margin:0;" class="row">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Duck Group is a group for ducks.">
-    <meta name="keywords" content="quack,duck,group,steam,discord,xyz">
-    <meta name="author" content="James">
-	<meta name="theme-color" content="#007dff">
-	<link rel="icon" sizes="192x192" href="img/duckicon.png">
-	<link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+       <div id="discord" style="background-image:url('img/discordbg.png');height:350px;" class="col s12 l6 center-align">
+         <h1 style="color:white;">Discord</h1>
+         <p style="color:white;">A Discord server for Ducks</p>
+         <img class="noselect" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=banner2" style="max-width:99%;max-height:76px;"><br>
+         <a target="_blank" href="https://discord.gg/AJAAKah" style="margin-top:20px;margin-bottom:20px;background-color:#1b2838;" class="waves-effect waves-light btn"><i class="material-icons right">send</i>JOIN NOW</a>
+      </div>
 
-    <title>Duck Group | A Group For Ducks</title>
-	<link rel="stylesheet" href="css/hover.css">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<style>
-	@font-face {
-    font-family: discord;
-    src: url(discord.otf);
-}
-.discordfont {
-font-family: discord;
-}
-
-	@font-face {
-    font-family: unisansthin;
-    src: url(unisansthin.otf);
-}
-.unisansthin {
-font-family: unisansthin;
-}
-.delayed {
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-}
-.moredelayed {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 2s;
-}
-.link{
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 5px;
-}
-</style>
-
-    <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
-    <link href="css/socialmediabuttons/dist/stylesheets/csmb.css" rel="stylesheet">
-	<link href="thing.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body class="animated fadeIn delayed" id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top animated slideInDown moredelayed">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Quack <i class="fa fa-bars"></i>
-                </button>
-				<a href="#page-top" class="navbar-brand page-scroll">
-               		<img src="img/duckgroup.png" class="hvr-skew" style="height:30px; margin-top: -5px;" alt="quack" class="navbar-brand page-scroll" href="#page-top"></img>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#discord">Discord</a>
-                    </li>
-				    <li>
-                        <a class="page-scroll" href="#steam">Steam</a>
-                    </li>
-	                <li>
-                        <a class="page-scroll" href="#gallery">Gallery</a>
-                    </li>
-		   <!--         <li>
-                        <a class="page-scroll" href="#duckplace">DuckPlace</a>
-                    </li> -->
-		            <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner animated zoomIn delayed">
-                <img src="img/duckgroup.png" alt="quack" style="width:77%;padding-bottom:100px">
-                <a href="#steam" class="btn btn-primary btn-xl page-scroll">Steam Group</a>
-				        <a href="#discord" class="btn btn-primary btn-xl page-scroll">Discord Server</a>
-                <hr>
-                <img class="hvr-skew-forward" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield">
-            </div>
-        </div>
-    </header>
-
-    <section style="background-image: url(img/discordbg.png);" id="discord">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 style="color: white;" class="section-heading discordfont">Discord Server</h1>
-                    <hr class="light">
-                    <p class="text-faded">A Discord server for ducks.</p>
-                    <a href="https://discord.gg/AJAAKah" class="page-scroll btn btn-default btn-xl sr-button">Join The Discord</a>
-					<hr class="light">
-					</div>
-          <img style="max-width:100%;" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=banner3">
-            </div>
-        </div>
+      <div style="background-color:#1b2838;height:350px;" class="col s12 l6 center-align">
+        <h1 style="color:white;">Steam</h1>
+        <p style="color:white;">A Steam Group for Ducks</p>
+        <img class="noselect" src="img/steam.png" style="max-width:99%;max-height:76px;"><br>
+        <a target="_blank" href="https://steamcommunity.com/groups/Duck-Group" style="margin-top:20px;margin-bottom:20px;background-color:#7289DA;" class="waves-effect waves-light btn"><i class="material-icons right">send</i>JOIN NOW</a>
+     </div>
     </section>
-
-    <section class="bg-steam" id="steam">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 class="section-heading discordfont">Steam Group</h1>
-                    <hr class="light">
-                    <p class="text-faded">A Steam group for ducks.</p>
-                    <a href="http://steamcommunity.com/groups/Duck-Group" class="page-scroll btn btn-default btn-xl sr-button">Join The Steam Group</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-	<section style="background-color:black;background-image: url(img/gallery.jpg);background-position: 50% 30%;" id="gallery">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 style="color: white;" class="section-heading discordfont">Duck Gallery</h1>
-                    <hr class="light">
-					<p style="color: white;" class="text-faded">A Gallery For Ducks.</p>
-          <p style="color: white;" class="text-faded">Visit <a class="link" href="https://discord.gg/hVHyueg"><i>#quackimg</i></a> on the <a class="link page-scroll" href="#discord">Discord Server</a> for more duck images.</p>
-					<hr class="light">
-                    <a href="https://gallery.duckgroup.xyz" class="page-scroll btn btn-default btn-xl sr-button">Go There</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-	<!-- <section style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/place1000.png'); background-repeat: no-repeat; background-size: cover;" id="duckplace">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 style="color: black; background-color: rgba(255, 255, 255, 0.75); border-radius: 5px;" class="section-heading discordfont">Duck Place</h1>
-                    <hr class="light">
-					<p style="color: black; color: black; background-color: rgba(255, 255, 255, 0.75); border-radius: 5px;" class="text-faded">A Place for Ducks.</p>
-
-					<hr class="light">
-                    <a href="https://place.duckgroup.xyz" class="page-scroll btn btn-default btn-xl sr-button">Go There</a>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-
-	<section style="background-color:#111111;background-image: url(img/giphy.webp); background-size: cover; background-position: center;" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 text-center">
-				<div class="">
-                    <h1 style="background-color: rgba(255, 255, 255, 0.75); border-radius:5px;padding-left:7px;padding-right:7px;padding-top:7px;padding-bottom:7px;" class="section-heading hvr-grow">what are you looking at</h1>
-                    <hr class="light">
-                    <p class="text-faded">go back up</p>
-                    <a href="#page-top" class="page-scroll btn btn-default btn-xl sr-button">go back up</a>
-					<p></p>
-					</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-	<!-- <p class="discordfont" style="color: white; font-size:20px; text-align: center; background-color: #23272A; padding:0;margin:0;">Made by Pacific Black Duck#2903</p> -->
-
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
-
-   <!-- google analytics thing-->
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88652762-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-</body>
-
-</html>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/scroll.js"></script>
+   </body>
