@@ -13,6 +13,28 @@
      <meta name="author" content="James">
 	   <meta name="theme-color" content="#007dff">
      <link rel="icon" sizes="192x192" href="img/duckicon.png">
+
+     <script type="text/javascript" src="https://quack.duckgroup.xyz/count.json"></script>
+             <script type="text/javascript" >
+                function load() {
+                     var mydata = JSON.parse(data);
+                     console.log(mydata);
+
+                     var qcount = document.getElementById('qcount');
+                     {
+                        qcount.innerHTML = qcount.innerHTML + "<h5 style='color:black;'>"+ mydata[0].count +"</h5>";
+                     }
+                     var ducks = document.getElementById('ducks');
+                     {
+                        ducks.innerHTML = ducks.innerHTML + "<h5 style='color:black;'>"+ mydata[0].ducks +"</h5>";
+                     }
+                     var ratio = document.getElementById('average');
+                     {
+                        ratio.innerHTML = ratio.innerHTML + "<h5 style='color:black;'>"+ mydata[0].ratio +"</h5>";
+                     }
+                 }
+        </script>
+
      <style>
      .noselect{
        user-select: none;
@@ -21,10 +43,19 @@
      h1{
        font-weight:600;
      }
+     h3{
+       font-weight:500;
+     }
+     .quackline{
+       height:5px;
+       background-color:black;
+       width: 77%;
+       margin: 0 auto;
+     }
      </style>
    </head>
 
-   <body style="margin:0; background-color:#236b25;">
+   <body onload="load()" style="margin:0; background-color:#236b25;">
 
      <header id="home" style="background-image:url('img/quack512.jpg');height: 100vh;background-size:cover;background-repeat:no-repeat;background-position:center;">
        <div class="center-align noselect slideInDown animated"><img class="" src="img/duckgroup.png" style="width:800px;max-width:99%;padding-top:100px;"><br><img src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield"></div>
@@ -45,6 +76,27 @@
         <img class="noselect" src="img/steam.png" style="max-width:99%;max-height:76px;"><br>
         <a target="_blank" href="https://steamcommunity.com/groups/Duck-Group" style="margin-top:20px;margin-bottom:20px;background-color:#7289DA;" class="waves-effect waves-light btn"><i class="material-icons right">send</i>JOIN NOW</a>
      </div>
+
+    <div style="background-color:white;background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align">
+       <h1 class="noselect" style="color:black;">Quack Statistics</h1>
+       <div class="row">
+         <div class="col s12 l4">
+           <h3>Total Quacks</h2>
+            <div class="quackline"></div>
+           <div id="qcount"></div>
+         </div>
+        <div class="col s12 l4">
+          <h3>Total Ducks</h2>
+            <div class="quackline"></div>
+            <div id="ducks"></div>
+        </div>
+        <div class="col s12 l4">
+          <h3>Duck to Quack Ratio</h2>
+            <div class="quackline"></div>
+            <div id="average"></div>
+        </div>
+       </div>
+    </div>
 
      <div style="background-image:url('img/giphy.gif');height:200px;background-size:cover;background-position:center;" class="col s12 l12 center-align">
        <h3 class="noselect" style="color:white;">what are you looking at</h3>
