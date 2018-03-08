@@ -19,7 +19,7 @@
      <meta property="og:url" content="https://duckgroup.xyz">
      <meta property="og:image" content="https://duckgroup.xyz/quack.png">
 
-     <script>document.write('<script src="https://quack.duckgroup.xyz/count.json?quack=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
+     <script>document.write('<script async src="https://quack.duckgroup.xyz/count.json?quack=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
              <script type="text/javascript" >
                 function load() {
                      var mydata = JSON.parse(data);
@@ -27,15 +27,15 @@
 
                      var qcount = document.getElementById('qcount');
                      {
-                        qcount.innerHTML = qcount.innerHTML + "<h5 style='color:black;'>"+ mydata[0].count +"</h5>";
+                        qcount.innerHTML = "<h5 style='color:black;'>"+ mydata[0].count +"</h5>";
                      }
                      var ducks = document.getElementById('ducks');
                      {
-                        ducks.innerHTML = ducks.innerHTML + "<h5 style='color:black;'>"+ mydata[0].ducks +"</h5>";
+                        ducks.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ducks +"</h5>";
                      }
                      var ratio = document.getElementById('average');
                      {
-                        ratio.innerHTML = ratio.innerHTML + "<h5 style='color:black;'>"+ mydata[0].ratio +"</h5>";
+                        ratio.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ratio +"</h5>";
                      }
                  }
         </script>
@@ -82,7 +82,7 @@
         <a target="_blank" href="https://steamcommunity.com/groups/Duck-Group" style="margin-top:20px;margin-bottom:20px;background-color:#7289DA;" class="waves-effect waves-light btn z-depth-3"><i class="material-icons right">send</i>JOIN NOW</a>
      </div>
 
-    <div id="stats" style="background-color:#e48c08;background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align">
+    <div id="stats" style="background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align orange">
        <h1 class="noselect" style="color:black;">Quack Statistics</h1>
        <div class="row">
          <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
