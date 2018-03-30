@@ -1,0 +1,53 @@
+.noselect{
+    user-select: none;
+    pointer-events: none;
+  }
+h1{
+    font-weight:600;
+  }
+h3{
+    font-weight:500;
+  }
+.quackline{
+    height:5px;
+    background-color:black;
+    width: 77%;
+    margin: 0 auto;
+  }
+@keyframes slideInFromLeft{
+    0%{transform: translateX(-100vw);
+    }
+    100%{transform: translateX(0);
+    }
+}
+.header{
+    background-image:url('../img/quack512.svg');
+    height: 100vh;background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dglogo{
+    width:800px;
+    max-width:90%;
+    max-height:60vh;
+    padding-top:100px;
+    padding-bottom:10px;
+    transform: translateX(-100vw);
+    animation: 1s cubic-bezier(1, 0, 0, 1) 0s 1 slideInFromLeft;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards; 
+}
+.discordshield{
+    transform: translateX(-100vw);
+    animation: 1s cubic-bezier(1, 0, 0, 1) 0s 1 slideInFromLeft;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards; 
+}

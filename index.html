@@ -3,9 +3,9 @@
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
      <title>Duck Group - A Group For Ducks</title>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <meta name="google-site-verification" content="-3bZOJTO0RJZqgM9s58hviHxtzVYOsy6a5qR9kpxYY0" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+     <meta name="google-site-verification" content="-3bZOJTO0RJZqgM9s58hviHxtzVYOsy6a5qR9kpxYY0">
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/quack.css"  media="screen,projection"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
      <meta content="utf-8" http-equiv="encoding">
@@ -39,31 +39,12 @@
                      }
                  }
         </script>
-
-     <style>
-     .noselect{
-       user-select: none;
-       pointer-events: none;
-     }
-     h1{
-       font-weight:600;
-     }
-     h3{
-       font-weight:500;
-     }
-     .quackline{
-       height:5px;
-       background-color:black;
-       width: 77%;
-       margin: 0 auto;
-     }
-     </style>
    </head>
 
    <body onload="load()" style="margin:0;background-color:#575660;">
 
-     <header id="home" style="background-image:url('img/quack512.svg');height: 100vh;background-size:cover;background-repeat:no-repeat;background-position:center;">
-       <div class="center-align noselect slideInDown animated"><img class="" src="img/duckgroup.svg" style="width:800px;max-width:90%;padding-top:100px;padding-bottom:10px;"><br><img src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield"></div>
+     <header id="home" class="header">
+       <div class="center-align noselect"><img src="img/duckgroup.svg" class="dglogo"><br><img class="discordshield" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield"></div>
        <div style="position: absolute;bottom:30;left:0;right:0;" class="center-align"><a href="#discord" class="btn-floating btn-large waves-effect waves-light orange z-depth-5"><i class="material-icons">arrow_downward</i></a></div>
      </header>
      <section style="margin:0;" class="row">
