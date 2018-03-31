@@ -46,29 +46,36 @@
     <div id="stats" style="background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align orange">
        <h1 class="noselect" style="color:black;white-space: pre-wrap;word-wrap: break-word;">Quack Statistics</h1>
        <div class="row">
-         <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
-           <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h4>Total Quacks</h4>
+         <div style="padding:0px 20px 0px 20px;" class="col s12 l6">
+           <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-5 noselect"><h4>Total Quacks</h4>
             <div class="quackline"></div>
-           <div id="qcount"></div></div>
+           <div style="white-space: pre-wrap;word-wrap: break-word;" id="qcount"></div></div>
          </div>
-
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
-          <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h4>Total Ducks</h4>
-            <div class="quackline"></div>
-            <div id="ducks"></div></div>
-        </div>
         
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
-          <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h4>Quacks Per Duck</h4>
+         <div style="padding:0px 20px 0px 20px;" class="col s12 l6">
+          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-5 noselect"><h4>Quacks Per Duck</h4>
             <div class="quackline"></div>
-            <div id="average"></div></div>
+            <div style="white-space: pre-wrap;word-wrap: break-word;" id="average"></div></div>
         </div>
 
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
-          <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h4>Newest Duck</h4>
+        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
+          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-5 noselect"><h4>Total Ducks</h4>
             <div class="quackline"></div>
-            <div style="white-space: pre-wrap;word-wrap: break-word;" id="avatar"></div>
+            <div style="white-space: pre-wrap;word-wrap: break-word;" id="ducks"></div></div>
         </div>
+
+        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
+          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-5 noselect"><h4>Newest Duck</h4>
+            <div class="quackline"></div>
+            <div style="white-space: pre-wrap;word-wrap: break-word;" id="newestduck"></div>
+        </div></div>
+
+        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
+          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-5 noselect"><h4>Newest Quack</h4>
+            <div class="quackline"></div>
+            <div style="white-space: pre-wrap;word-wrap: break-word;" id="newestquack"></div>
+        </div></div>
+
     </section>
     <section style="background-image:url('img/giphy.gif');height:200px;background-size:cover;background-position:center;" class="center-align">
       <h3 style="margin:0;padding-top:15px;color:white;">what are you looking at</h3>
@@ -85,7 +92,8 @@
                      var qcount = document.getElementById('qcount');{qcount.innerHTML = "<h5 style='color:black;'>"+ mydata[0].count +"</h5>";}
                      var ducks = document.getElementById('ducks');{ducks.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ducks +"</h5>";}
                      var ratio = document.getElementById('average');{ratio.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ratio +"</h5>";}
-                     var avatar = document.getElementById('avatar');{avatar.innerHTML = "<h5><img style='width:30px;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestduckavatar +"'>" + mydata[0].latestduck + "</h5>";}
+                     var avatar = document.getElementById('newestduck');{avatar.innerHTML = "<h5><img style='max-width:1.3em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestduckavatar +"'>" + mydata[0].latestduck + "</h5>";}
+                     var avatar = document.getElementById('newestquack');{avatar.innerHTML = "<h5><img style='max-width:1.3em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestquackav +"'>" + mydata[0].latestquack + "</h5>";}
                  }
         </script>
    </body>
