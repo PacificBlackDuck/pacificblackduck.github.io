@@ -19,26 +19,6 @@
      <meta property="og:url" content="https://duckgroup.xyz">
      <meta property="og:image" content="https://duckgroup.xyz/img/duckicon.png">
 
-     <script>document.write('<script async src="https://quack.duckgroup.xyz/count.json?quack=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
-             <script type="text/javascript" >
-                function load() {
-                     var mydata = JSON.parse(data);
-                     console.log(mydata);
-
-                     var qcount = document.getElementById('qcount');
-                     {
-                        qcount.innerHTML = "<h5 style='color:black;'>"+ mydata[0].count +"</h5>";
-                     }
-                     var ducks = document.getElementById('ducks');
-                     {
-                        ducks.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ducks +"</h5>";
-                     }
-                     var ratio = document.getElementById('average');
-                     {
-                        ratio.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ratio +"</h5>";
-                     }
-                 }
-        </script>
    </head>
 
    <body onload="load()" style="margin:0;background-color:#575660;">
@@ -66,31 +46,48 @@
     <div id="stats" style="background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align orange">
        <h1 class="noselect" style="color:black;">Quack Statistics</h1>
        <div class="row">
-         <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
+         <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
            <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h3>Total Quacks</h2>
             <div class="quackline"></div>
            <div id="qcount"></div></div>
          </div>
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
+
+        <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
           <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h3>Total Ducks</h2>
             <div class="quackline"></div>
             <div id="ducks"></div></div>
         </div>
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
+        
+        <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
           <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h3>Quacks Per Duck</h2>
             <div class="quackline"></div>
             <div id="average"></div></div>
         </div>
-       </div>
-    </div>
 
-     <div style="background-image:url('img/giphy.gif');height:200px;background-size:cover;background-position:center;" class="col s12 l12 center-align">
-       <h3 class="noselect" style="color:white;">what are you looking at</h3>
-       <a target="_blank" href="#home" style="margin-top:20px;margin-bottom:20px;background-color:white;color:black;" class="waves-effect waves-light btn">go away</a>
-    </div>
-
+        <div style="padding:0px 20px 0px 20px;" class="col s12 l3">
+          <div style="padding:20px 0px 20px 0px;" class="card z-depth-5 noselect"><h3>Newest Duck</h2>
+            <div class="quackline"></div>
+            <div style="display: flex;justify-content: center;"><div id="avatar"></div><span id="duck"></span></div>
+        </div>
+    </section>
+    <section style="background-image:url('img/giphy.gif');height:200px;background-size:cover;background-position:center;" class="center-align">
+      <h3 style="margin:0;padding-top:15px;color:white;">what are you looking at</h3>
+      <a target="_blank" href="#home" style="margin-top:40px;margin-bottom:20px;color:black;" class="waves-effect waves-light btn white z-depth-3"><i class="material-icons right">cake</i>DUCK OFF</a>
     </section>
      <script type="text/javascript" src="js/materialize.min.js"></script>
      <script type="text/javascript" src="js/scroll.js"></script>
+     <script>document.write('<script async src="https://quack.duckgroup.xyz/count.json?quack=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
+             <script type="text/javascript" >
+                function load() {
+                     var mydata = JSON.parse(data);
+                     console.log(mydata);
+
+                     var qcount = document.getElementById('qcount');{qcount.innerHTML = "<h5 style='color:black;'>"+ mydata[0].count +"</h5>";}
+                     var ducks = document.getElementById('ducks');{ducks.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ducks +"</h5>";}
+                     var ratio = document.getElementById('average');{ratio.innerHTML = "<h5 style='color:black;'>"+ mydata[0].ratio +"</h5>";}
+                     var avatar = document.getElementById('avatar');{avatar.innerHTML = "<img style='width:45px;border-radius:50%;margin:3px;' src='"+ mydata[0].latestduckavatar +"'>";}
+                     var latestduck = document.getElementById('duck');{latestduck.innerHTML = "<h5>" + mydata[0].latestduck + "</h5>";}
+                 }
+        </script>
    </body>
 </html>
