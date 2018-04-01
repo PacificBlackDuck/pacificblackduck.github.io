@@ -51,3 +51,6 @@ h3{
     -o-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards; 
 }
+.statfont{
+    font-size: 1.1rem;
+}
