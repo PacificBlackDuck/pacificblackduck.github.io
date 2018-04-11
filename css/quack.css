@@ -54,3 +54,12 @@ h3{
 .statfont{
     font-size: 1.1rem;
 }
+.lbtxt{
+    font-size: 25px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+    .lbtxt{
+        font-size:15px;
+    }
+}
