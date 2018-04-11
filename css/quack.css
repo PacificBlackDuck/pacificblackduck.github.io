@@ -58,8 +58,14 @@ h3{
     font-size: 25px;
     font-weight: 700;
 }
+.lbpad{
+    padding: 0px 10px 0px 10px;
+}
 @media only screen and (max-width: 600px) {
     .lbtxt{
         font-size:15px;
+    }
+    .lbpad{
+        padding: 0px 3px 0px 3px;
     }
 }
