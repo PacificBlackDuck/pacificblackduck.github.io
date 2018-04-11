@@ -80,22 +80,10 @@
     
     <section id="leaderboard" style="overflow: hidden;padding:0px 20px 0px 20px;" class="green lighten-2">
       <h1 class="center-align">Top Quackers</h1>
-      <div class="row">
-        <div  class="col s12 l12">
-          <div style="padding:10px 20px 10px 20px;background-color: #FFD700;" class="card z-depth-3">
-            <div id="firstav">loading...</div><div id="name1"></div>
-          </div>
-        </div>
-        <div class="col s12 l6">
-          <div style="padding:10px 20px 10px 20px;background-color: #C0C0C0;" class="card z-depth-3">
-            <div id="secondav">loading...</div><div id="name2"></div>
-          </div>
-        </div>
-        <div class="col s12 l6">
-          <div style="padding:10px 20px 10px 20px;background-color: #CD7F32;" class="card z-depth-3">
-            <div id="thirdav">loading...</div><div id="name3"></div>
-          </div>
-        </div>
+      <div style="display:flex;align-items: flex-end;" class="row">
+        <div style="background-color:silver;height:270px;white-space: pre-wrap;word-wrap: break-word;" class="col s4 l4 center-align"><div id="name2"></div><div id="secondav"></div></div>
+        <div style="background-color:gold;height:350px;white-space: pre-wrap;word-wrap: break-word;" class="col s4 l4 center-align"><div id="name1"></div><div id="firstav"></div></div>
+        <div style="background-color:#CD7F32;height:220px;white-space: pre-wrap;word-wrap: break-word;" class="col s4 l4 center-align"><div id="name3"></div><div id="thirdav"></div></div>
       </div>
     </section>
 
@@ -116,12 +104,12 @@
                      var thing = document.getElementById('average');{thing.innerHTML = "<h5>"+ mydata[0].ratio +"</h5>";}
                      var thing = document.getElementById('newestduck');{thing.innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestduckavatar +"'>" + mydata[0].latestduck + "</h5>";}
                      var thing = document.getElementById('newestquack');{thing.innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestquackav +"'>" + mydata[0].latestquack + "</h5>";}
-                     var thing = document.getElementById('name1');{thing.innerHTML = "<h5><b>" + mydata[0].firstcount + "</b> quacks.</h5>";}
-                     var thing = document.getElementById('name2');{thing.innerHTML = "<h5><b>" + mydata[0].secondcount + "</b> quacks.</h5>";}
-                     var thing = document.getElementById('name3');{thing.innerHTML = "<h5><b>" + mydata[0].thirdcount + "</b> quacks.</h5>";}
-                     var thing = document.getElementById('firstav');{thing.innerHTML = "<h5><b>#1 -  <img src='" + mydata[0].firstavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 0px 10px;vertical-align:middle;'>" + mydata[0].firstname + "</b></h5>";}
-                     var thing = document.getElementById('secondav');{thing.innerHTML = "<h5><b>#2 -  <img src='" + mydata[0].secondavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 0px 10px;vertical-align:middle;'>" + mydata[0].secondname + "</b></h5>";}
-                     var thing = document.getElementById('thirdav');{thing.innerHTML = "<h5><b>#3 -  <img src='" + mydata[0].thirdavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 0px 10px;vertical-align:middle;'>" + mydata[0].thirdname + "</b></h5>";}
+                     var thing = document.getElementById('name1');{thing.innerHTML = "<b><h4>#1<br></h4><h5>" + mydata[0].firstcount + "</b> quacks.</h5>";}
+                     var thing = document.getElementById('name2');{thing.innerHTML = "<b><h4>#2<br></h4><h5>" + mydata[0].secondcount + "</b> quacks.</h5>";}
+                     var thing = document.getElementById('name3');{thing.innerHTML = "<b><h4>#3<br></h4><h5>" + mydata[0].thirdcount + "</b> quacks.</h5>";}
+                     var thing = document.getElementById('firstav');{thing.innerHTML = "<h6><img src='" + mydata[0].firstavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 0px 10px;vertical-align:middle;'>" + mydata[0].firstname + "</b></h6>";}
+                     var thing = document.getElementById('secondav');{thing.innerHTML = "<h6><img src='" + mydata[0].secondavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 0px 10px;vertical-align:middle;'>" + mydata[0].secondname + "</b></h6>";}
+                     var thing = document.getElementById('thirdav');{thing.innerHTML = "<h6><img src='" + mydata[0].thirdavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 0px 10px;vertical-align:middle;'>" + mydata[0].thirdname + "</b></h6>";}
                  }
         </script>
    </body>
