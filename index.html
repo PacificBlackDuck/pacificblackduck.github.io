@@ -5,7 +5,7 @@
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <meta name="google-site-verification" content="-3bZOJTO0RJZqgM9s58hviHxtzVYOsy6a5qR9kpxYY0">
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <link type="text/css" rel="stylesheet" href="css/quack.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/quack.css?eee">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
      <meta content="utf-8" http-equiv="encoding">
@@ -29,58 +29,58 @@
      </header>
      <section style="margin:0;" class="row">
 
-       <div id="discord" style="background-image:url('img/discordbg.png');height:350px;" class="col s12 l4 center-align">
+       <div id="discord" style="background-image:url('img/discordbg.png');" class="col s12 l4 center-align firstthing">
          <h1 class="noselect" style="color:white;">Discord</h1>
-         <p class="noselect" style="color:white;">A Discord server for ducks. <br>Where all the quacking happens.</p>
-         <img class="noselect" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=banner2" style="max-width:99%;max-height:76px;"><br>
-         <a target="_blank" href="https://discord.gg/AJAAKah" style="margin-top:20px;margin-bottom:20px;background-color:#1b2838;" class="waves-effect waves-light btn z-depth-3"><i class="material-icons right">send</i>JOIN NOW</a>
+         <p class="noselect" style="color:white;">A Discord server for ducks. Where all the quacking happens.</p>
+         <img class="noselect firstthingimg" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=banner2"><br>
+         <a target="_blank" href="https://discord.gg/AJAAKah" style="background-color:#1b2838;" class="waves-effect waves-light btn z-depth-3 firstthingbtn"><i class="material-icons right">send</i>JOIN NOW</a>
       </div>
 
-      <div id="youtube" style="background-color:#282828;height:350px;" class="col s12 l4 center-align">
+      <div id="youtube" style="background-color:#282828;" class="col s12 l4 center-align firstthing">
         <h1 class="noselect" style="color:white;">YouTube</h1>
-        <p class="noselect" style="color:white;">A YouTube channel for ducks. <br>You better subscribe now.</p>
-        <img class="noselect" src="img/yt.svg" style="max-width:99%;max-height:76px;"><br>
-        <a target="_blank" href="https://www.youtube.com/channel/UC4DYDlCR966WiURM46cZlSw" style="margin-top:20px;margin-bottom:20px;background-color:#ffffff;color:#000000;" class="waves-effect waves-light btn z-depth-3"><i class="material-icons right">send</i>GO THERE</a>
+        <p class="noselect" style="color:white;">A YouTube channel for ducks. You better subscribe now.</p>
+        <img class="noselect firstthingimg" src="img/yt.svg"><br>
+        <a target="_blank" href="https://www.youtube.com/channel/UC4DYDlCR966WiURM46cZlSw" style="background-color:#ffffff;color:#000000;" class="waves-effect waves-light btn z-depth-3 firstthingbtn"><i class="material-icons right">send</i>GO THERE</a>
      </div>
 
-      <div id="steam" style="background-color:#1b2838;height:350px;" class="col s12 l4 center-align">
+      <div id="steam" style="background-color:#1b2838;" class="col s12 l4 center-align firstthing">
         <h1 class="noselect" style="color:white;">Steam</h1>
-        <p class="noselect" style="color:white;">A Steam group for ducks. <br>Evidence shows that joining will improve your skills by 100%.</p>
-        <img class="noselect" src="img/steam.svg" style="max-width:99%;max-height:76px;"><br>
-        <a target="_blank" href="https://steamcommunity.com/groups/Duck-Group" style="margin-top:20px;margin-bottom:20px;background-color:#7289DA;" class="waves-effect waves-light btn z-depth-3"><i class="material-icons right">send</i>JOIN NOW</a>
+        <p class="noselect" style="color:white;">A Steam group for ducks. Evidence shows that joining will improve your skills by 100%.</p>
+        <img class="noselect firstthingimg" src="img/steam.svg"><br>
+        <a target="_blank" href="https://steamcommunity.com/groups/Duck-Group" style="background-color:#7289DA;" class="waves-effect waves-light btn z-depth-3 firstthingbtn"><i class="material-icons right">send</i>JOIN NOW</a>
      </div>
 
     <div id="stats" style="background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align orange">
        <h1 class="noselect" style="color:white;white-space: pre-wrap;word-wrap: break-word;">Quack Statistics</h1>
        <div class="row">
-         <div style="padding:0px 20px 0px 20px;" class="col s12 l6">
-           <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-3 noselect"><h4>Total Quacks</h4>
+         <div class="outerstatthing col s12 l6">
+           <div class="card z-depth-3 noselect innerstatthing"><h4>Total Quacks</h4>
             <div class="quackline"></div>
-           <div style="white-space: pre-wrap;word-wrap: break-word;" id="qcount"><h5>loading...</h5></div></div>
+           <div class="statspace" id="qcount"><h5>loading...</h5></div></div>
          </div>
         
-         <div style="padding:0px 20px 0px 20px;" class="col s12 l6">
-          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-3 noselect"><h4>Quacks Per Duck</h4>
+         <div class="outerstatthing col s12 l6">
+          <div class="card z-depth-3 noselect innerstatthing"><h4>Quacks Per Duck</h4>
             <div class="quackline"></div>
-            <div style="white-space: pre-wrap;word-wrap: break-word;" id="average"><h5>loading...</h5></div></div>
-        </div>
-
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
-          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-3 noselect"><h4>Total Ducks</h4>
-            <div class="quackline"></div>
-            <div style="white-space: pre-wrap;word-wrap: break-word;" id="ducks"><h5>loading...</h5></div></div>
-        </div>
-
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
-          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-3 noselect"><h4>Newest Duck</h4>
-            <div class="quackline"></div>
-            <div style="white-space: pre-wrap;word-wrap: break-word;" id="newestduck"><h5>loading...</h5></div>
+            <div class="statspace" id="average"><h5>loading...</h5></div>
         </div></div>
 
-        <div style="padding:0px 20px 0px 20px;" class="col s12 l4">
-          <div style="padding:20px 0px 20px 0px;height:160px;" class="card z-depth-3 noselect"><h4>Newest Quack</h4>
+        <div class="outerstatthing col s12 l4">
+          <div class="card z-depth-3 noselect innerstatthing"><h4>Total Ducks</h4>
             <div class="quackline"></div>
-            <div style="white-space: pre-wrap;word-wrap: break-word;" id="newestquack"><h5>loading...</h5></div>
+            <div class="statspace" id="ducks"><h5>loading...</h5></div>
+          </div></div>
+
+        <div class="outerstatthing col s12 l4">
+          <div class="card z-depth-3 noselect innerstatthing"><h4>Newest Duck</h4>
+            <div class="quackline"></div>
+            <div class="statspace" id="newestduck"><h5>loading...</h5></div>
+        </div></div>
+
+        <div class="outerstatthing col s12 l4">
+          <div class="card z-depth-3 noselect innerstatthing"><h4>Newest Quack</h4>
+            <div class="quackline"></div>
+            <div class="statspace" id="newestquack"><h5>loading...</h5></div>
         </div></div>
 
     </section>

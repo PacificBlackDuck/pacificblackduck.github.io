@@ -76,3 +76,25 @@ h3{
         height: 100vh;
     }
 }
+.firstthing{
+    height:350px;
+}
+.firstthingimg{
+    max-width:99%;
+    max-height:76px;
+}
+.firstthingbtn{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.statspace{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.outerstatthing{
+    padding:0px 20px 0px 20px;
+}
+.innerstatthing{
+    padding:20px 0px 20px 0px;
+    height:160px;
+}
