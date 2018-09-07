@@ -1,0 +1,60 @@
+<head>
+<title id="titlecount">countdown</title>
+<style>
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box{
+    display:block;
+    border:5px solid black;
+    padding:20px;
+    background-color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 500px) {
+    .box {
+      border:none;
+      padding:none;
+      font-size:30px;
+    }
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="box">
+  <div id="seconds">Javascript is not enabled.</div>
+  <div id="minutes"></div>
+  <div id="hours"></div>
+  <div id="days"></div>
+  <div id="weeks"></div>
+</div>
+
+
+<script>
+function start() {
+  var currenttime = (new Date()).getTime() / 1000;
+  var targettime = 1537423200
+  var countdownseconds = ((targettime) - currenttime).toFixed(3)
+  var countdownminutes = ((targettime / 60) - currenttime/60).toFixed(4)
+  var countdownhours = ((targettime / 3600) - currenttime/3600).toFixed(4)
+  var countdowndays = ((targettime / 3600 / 24) - currenttime/3600/24).toFixed(4)
+  var countdownweeks = ((targettime / 3600 / 24 / 7) - currenttime/3600/24/7).toFixed(4)
+
+  document.getElementById('seconds').innerHTML = countdownseconds + " seconds"
+  document.getElementById('minutes').innerHTML = countdownminutes + " minutes"
+  document.getElementById('hours').innerHTML = countdownhours + " hours"
+  document.getElementById('days').innerHTML = countdowndays + " days"
+  document.getElementById('weeks').innerHTML = countdownweeks + " weeks"
+
+  document.getElementById('titlecount').innerHTML = countdowndays + " days"
+  setTimeout(start, 30);
+}
+
+start();
+</script>
+</body>
