@@ -1,7 +1,7 @@
 <html prefix="og: http://ogp.me/ns#">
 <head>
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <title>Duck Group - A Group For Ducks</title>
+     <title id="title">Duck Group - A Group For Ducks</title>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <meta name="google-site-verification" content="-3bZOJTO0RJZqgM9s58hviHxtzVYOsy6a5qR9kpxYY0">
      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -109,17 +109,18 @@
                      var mydata = JSON.parse(data);
                      console.log(mydata);
 
-                     var thing = document.getElementById('qcount');{thing.innerHTML = "<h5>"+ mydata[0].count +"</h5>";}
-                     var thing = document.getElementById('ducks');{thing.innerHTML = "<h5>"+ mydata[0].ducks +"</h5>";}
-                     var thing = document.getElementById('average');{thing.innerHTML = "<h5>"+ mydata[0].ratio +"</h5>";}
-                     var thing = document.getElementById('newestduck');{thing.innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestduckavatar +"'>" + mydata[0].latestduck + "</h5>";}
-                     var thing = document.getElementById('newestquack');{thing.innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestquackav +"'>" + mydata[0].latestquack + "</h5>";}
-                     var thing = document.getElementById('name1');{thing.innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#1<br></h4><h5>" + mydata[0].firstcount + "</b> quacks.</h5>";}
-                     var thing = document.getElementById('name2');{thing.innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#2<br></h4><h5>" + mydata[0].secondcount + "</b> quacks.</h5>";}
-                     var thing = document.getElementById('name3');{thing.innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#3<br></h4><h5>" + mydata[0].thirdcount + "</b> quacks.</h5>";}
-                     var thing = document.getElementById('firstav');{thing.innerHTML = "<span class='lbtxt'><img src='" + mydata[0].firstavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].firstname + "</b></span>";}
-                     var thing = document.getElementById('secondav');{thing.innerHTML = "<span class='lbtxt'><img src='" + mydata[0].secondavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].secondname + "</b></span>";}
-                     var thing = document.getElementById('thirdav');{thing.innerHTML = "<span class='lbtxt'><img src='" + mydata[0].thirdavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].thirdname + "</b></span>";}
+                    document.getElementById('title').innerHTML = "Duck Group - "+ mydata[0].ducks+" ducks...";
+                    document.getElementById('qcount').innerHTML = "<h5>"+ mydata[0].count +"</h5>";
+                    document.getElementById('ducks').innerHTML = "<h5>"+ mydata[0].ducks +"</h5>";
+                    document.getElementById('average').innerHTML = "<h5>"+ mydata[0].ratio +"</h5>";
+                    document.getElementById('newestduck').innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestduckavatar +"'>" + mydata[0].latestduck + "</h5>";
+                    document.getElementById('newestquack').innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestquackav +"'>" + mydata[0].latestquack + "</h5>";
+                    document.getElementById('name1').innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#1<br></h4><h5>" + mydata[0].firstcount + "</b> quacks.</h5>";
+                    document.getElementById('name2').innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#2<br></h4><h5>" + mydata[0].secondcount + "</b> quacks.</h5>";
+                    document.getElementById('name3').innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#3<br></h4><h5>" + mydata[0].thirdcount + "</b> quacks.</h5>";
+                    document.getElementById('firstav').innerHTML = "<span class='lbtxt'><img src='" + mydata[0].firstavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].firstname + "</b></span>";
+                    document.getElementById('secondav').innerHTML = "<span class='lbtxt'><img src='" + mydata[0].secondavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].secondname + "</b></span>";
+                    document.getElementById('thirdav').innerHTML = "<span class='lbtxt'><img src='" + mydata[0].thirdavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].thirdname + "</b></span>";
                  }
         </script>
    </body>
