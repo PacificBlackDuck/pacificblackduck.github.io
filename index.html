@@ -1,126 +1,33 @@
-<html prefix="og: http://ogp.me/ns#">
 <head>
-     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <title id="title">Duck Group - A Group For Ducks</title>
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <meta name="google-site-verification" content="-3bZOJTO0RJZqgM9s58hviHxtzVYOsy6a5qR9kpxYY0">
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-     <link type="text/css" rel="stylesheet" href="css/quack.css?eee">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-     <meta content="utf-8" http-equiv="encoding">
-     <meta name="description" content="Duck Group is a group for ducks.">
-     <meta name="author" content="James">
-     <meta name="theme-color" content="#FFD700">
-     <link rel="icon" sizes="192x192" href="https://duckgroup.xyz/img/duckicon.png">
-     <meta property="og:title" content="Duck Group">
-     <meta property="og:type" content="website">
-     <meta property="og:description" content="Duck Group is a group for ducks.">
-     <meta property="og:url" content="https://duckgroup.xyz">
-     <meta property="og:image" content="https://duckgroup.xyz/img/duckicon.png">
+    <title>Duck Group</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#db5945">
+    <link rel="icon" sizes="192x192" href="duckicon.png">
+</head>
+<body>
 
-   </head>
-
-   <body onload="load()" style="margin:0;background-color:#575660;">
-
-     <header id="home" class="header">
-       <div class="center-align noselect"><img src="img/duckgroup.svg" class="dglogo"><br><img class="discordshield" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=shield"></div>
-       <div style="position: absolute;bottom:30;left:0;right:0;" class="center-align"><a href="#discord" class="btn-floating btn-large waves-effect waves-light orange z-depth-5"><i class="material-icons">arrow_downward</i></a></div>
-     </header>
-     <section style="margin:0;" class="row">
-
-       <div id="discord" style="background-image:url('img/discordbg.png');" class="col s12 l6 center-align firstthing">
-         <h1 class="noselect" style="color:white;">Discord</h1>
-         <p class="noselect" style="color:white;">A Discord server for ducks.</p>
-         <img class="noselect firstthingimg" src="https://discordapp.com/api/guilds/177014532705615872/widget.png?style=banner2"><br>
-         <a target="_blank" href="https://discord.gg/7mNXydn" style="background-color:#1b2838;" class="waves-effect waves-light btn z-depth-3 firstthingbtn"><i class="material-icons right">send</i>JOIN NOW</a>
-      </div>
-
-      <div id="steam" style="background-color:#1b2838;" class="col s12 l6 center-align firstthing">
-        <h1 class="noselect" style="color:white;">Steam</h1>
-        <p class="noselect" style="color:white;">A Steam group for ducks.</p>
-        <img class="noselect firstthingimg" src="img/steam.svg"><br>
-        <a target="_blank" href="https://steamcommunity.com/groups/Duck-Group" style="background-color:#7289DA;" class="waves-effect waves-light btn z-depth-3 firstthingbtn"><i class="material-icons right">send</i>JOIN NOW</a>
-     </div>
-
-    <div id="stats" style="background-size:cover;background-position:center;display: inline-block" class="col s12 l12 center-align orange">
-       <h1 class="noselect" style="color:white;white-space: pre-wrap;word-wrap: break-word;">Quack Statistics</h1>
-       <div class="row">
-         <div class="outerstatthing col s12 l6">
-           <div class="card z-depth-3 noselect innerstatthing"><h4>Total Quacks</h4>
-            <div class="quackline"></div>
-           <div class="statspace" id="qcount"><h5>loading...</h5></div></div>
-         </div>
-        
-         <div class="outerstatthing col s12 l6">
-          <div class="card z-depth-3 noselect innerstatthing"><h4>Quacks Per Duck</h4>
-            <div class="quackline"></div>
-            <div class="statspace" id="average"><h5>loading...</h5></div>
-        </div></div>
-
-        <div class="outerstatthing col s12 l4">
-          <div class="card z-depth-3 noselect innerstatthing"><h4>Total Ducks</h4>
-            <div class="quackline"></div>
-            <div class="statspace" id="ducks"><h5>loading...</h5></div>
-          </div></div>
-
-        <div class="outerstatthing col s12 l4">
-          <div class="card z-depth-3 noselect innerstatthing"><h4>Newest Duck</h4>
-            <div class="quackline"></div>
-            <div class="statspace" id="newestduck"><h5>loading...</h5></div>
-        </div></div>
-
-        <div class="outerstatthing col s12 l4">
-          <div class="card z-depth-3 noselect innerstatthing"><h4>Newest Quack</h4>
-            <div class="quackline"></div>
-            <div class="statspace" id="newestquack"><h5>loading...</h5></div>
-        </div></div>
-
-    </section>
-    
-    <section id="leaderboard" style="overflow: hidden;padding:0px 20px 0px 20px;background:url('img/line.svg');background:linear-gradient(to bottom, #ff9800, #9e5e00)">
-      <h1 style="color: white;" class="center-align">Top Quackers</h1>
-      <div style="display:flex;align-items: flex-end;">
-
-        <div style="word-wrap: break-word;flex-grow: 1;min-width:50px;" class="center-align lbpad"><div style="background-image: url(img/silver.svg);background-size:100% 100%;" id="secondav"></div>
-          <div style="background-color:silver;height:270px;padding:10px"><div id="name2"></div></div>
+    <section style="display:block;background-color:rgba(255, 152, 0, 1);padding:30px;border-radius: 10px;text-align:center;box-shadow: 25px 25px 0px black;">
+        <img style="max-width:80%;width:300px;margin-bottom:10px;" src="duckgroup.svg">
+        <div style="display:flex;">
+            <div style="background-color:#7289DA;border-radius: 15px 0px 0px 0px;flex-grow: 1;align-items: center;padding:5px;">
+                <a href="https://discord.gg/7mNXydn">
+                    <p class="subtitle">discord</p>
+                    <img style="width:60px;" src="discord.svg">
+                </a>
+            </div>
+            <div style="background-color:#1b2838;border-radius: 0px 15px 0px 0px;flex-grow: 1;align-items: center;padding:5px;">
+                <a href="https://steamcommunity.com/groups/Duck-Group">
+                    <p class="subtitle">steam</p>
+                    <img style="width:70px;margin-top:15px;" src="steam.svg">
+                </a>
+            </div>
         </div>
-
-        <div style="word-wrap: break-word;flex-grow: 1;min-width:50px;" class="center-align lbpad"><div style="background-image: url(img/gold.svg);background-size:100% 100%;" id="firstav"></div>
-          <div style="background-color:gold;height:350px;padding:10px"><div id="name1"></div></div>
-        </div>
-
-        <div style="word-wrap: break-word;flex-grow: 1;min-width:50px;" class="center-align lbpad"><div style="background-image: url(img/bronze.svg);background-size:100% 100%;" id="thirdav"></div>
-          <div style="background-color:#CD7F32;height:220px;padding:10px"><div id="name3"></div></div>
-        </div>
-
-      </div>
+        <a href="https://counting.duckgroup.xyz/"><div style="background-color:#5c4ecc;border-radius: 0px 0px 15px 15px;display:flex;align-items: center;justify-content: center;">
+            <img src="countbotclear.png" style="width:50px;">
+            <span style="color:white;font-size:20px;">COUNTING 🡆</span>
+        </div></a>
     </section>
 
-    <section style="height:25em;background-image: url(img/sittingducks.jpg);background-position: right;background-size:fill;display: flex;justify-content: center;align-items: center;" class="center-align">
-      <h3 style="color:white;margin:0;">hello</h3>
-    </section>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script type="text/javascript" src="js/scroll.js"></script>
-     <script>document.write('<script async src="https://quack.duckgroup.xyz/quack/quack.js?quack=' + Math.floor(Math.random() * 1000) + '"\><\/script>');</script>
-             <script type="text/javascript" >
-                function load() {
-                     var mydata = JSON.parse(data);
-                     console.log(mydata);
-
-                    document.getElementById('title').innerHTML = "Duck Group - "+ mydata[0].ducks+" ducks";
-                    document.getElementById('qcount').innerHTML = "<h5>"+ mydata[0].count +"</h5>";
-                    document.getElementById('ducks').innerHTML = "<h5>"+ mydata[0].ducks +"</h5>";
-                    document.getElementById('average').innerHTML = "<h5>"+ mydata[0].ratio +"</h5>";
-                    document.getElementById('newestduck').innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestduckavatar +"'>" + mydata[0].latestduck + "</h5>";
-                    document.getElementById('newestquack').innerHTML = "<h5 class='statfont'><img style='max-width:1.5em;border-radius:50%;margin:5px 5px -5px 5px;' src='"+ mydata[0].latestquackav +"'>" + mydata[0].latestquack + "</h5>";
-                    document.getElementById('name1').innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#1<br></h4><h5>" + mydata[0].firstcount + "</b> quacks.</h5>";
-                    document.getElementById('name2').innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#2<br></h4><h5>" + mydata[0].secondcount + "</b> quacks.</h5>";
-                    document.getElementById('name3').innerHTML = "<b><h4 style='font-weight:900;font-size:35px'>#3<br></h4><h5>" + mydata[0].thirdcount + "</b> quacks.</h5>";
-                    document.getElementById('firstav').innerHTML = "<span class='lbtxt'><img src='" + mydata[0].firstavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].firstname + "</b></span>";
-                    document.getElementById('secondav').innerHTML = "<span class='lbtxt'><img src='" + mydata[0].secondavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].secondname + "</b></span>";
-                    document.getElementById('thirdav').innerHTML = "<span class='lbtxt'><img src='" + mydata[0].thirdavatar + "' alt='' style='border-radius:50%;width:40px;margin:0px 10px 5px 10px;vertical-align:middle;'><br>" + mydata[0].thirdname + "</b></span>";
-                 }
-        </script>
-   </body>
-</html>
+</body>

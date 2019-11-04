@@ -1,0 +1,36 @@
+@keyframes colours
+{
+    0%{background-color:#f44336;}
+    10%{background-color:#e91e63;}
+    20%{background-color:#9c27b0;}
+    30%{background-color:#3f51b5;}
+    40%{background-color:#2196f3;}
+    50%{background-color:#00bcd4;}
+    60%{background-color:#4caf50;}
+    70%{background-color:#cddc39;}
+    80%{background-color:#ffc107;}
+    90%{background-color:#ff5722;}
+    100%{background-color:#f44336;}
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+a{text-decoration: none;}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    background-image: url(duckspin.gif);
+    image-rendering: pixelated;
+    background-position: center;
+    animation: colours 30s infinite;
+}
+.maincard{
+    text-align:center;
+}
+.subtitle{
+    font-size: 27px;
+    margin:10px 0px 5px 0px;
+    color:#ffffff;
+}
