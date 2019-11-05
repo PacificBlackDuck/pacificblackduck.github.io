@@ -45,6 +45,7 @@ stars.forEach(function(star) {
 });
 
 function draw(){
+    if (x<=window.innerWidth){
     ctx.globalCompositeOperation = 'destination-out';
     ctx.beginPath();
     ctx.moveTo(x, y);
@@ -52,6 +53,7 @@ function draw(){
     y = -(Math.sin(x/freq)*amp) - x*window.innerHeight/(window.innerHeight*window.innerWidth/1000) + window.innerHeight;
     ctx.lineTo(x,y);
     ctx.stroke();
+    }
     ctx.globalCompositeOperation = 'source-over'
     stars.forEach(function(star) {
         ctx.fillStyle = "#000000";
