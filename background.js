@@ -14,7 +14,7 @@ window.addEventListener('resize', resize);
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 var freq = 50
-var amp = 150
+var amp = 250
 var x = 0
 var y = window.innerHeight
 ctx.lineCap = "round";
