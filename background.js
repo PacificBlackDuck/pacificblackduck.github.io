@@ -37,7 +37,7 @@ ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
 ctx.globalCompositeOperation = 'source-over'
 ctx.fillStyle = "#FFFFFF";
-for (i = 0; i < 200; i++) {
+for (i = 0; i < 100; i++) {
     stars.push([randpos('x'), randpos('y'), rand(), rand()])
 }
 stars.forEach(function(star) {
@@ -66,6 +66,7 @@ function draw(){
         if (star[1] >= window.innerHeight){star[3] = star[3] * -1}
         if (star[1] <= 0){star[3] = star[3] * -1}
     });
+    requestAnimationFrame(draw);
 }
 
-var repeat = setInterval(draw, 10);
+requestAnimationFrame(draw);
