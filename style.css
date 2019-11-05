@@ -36,7 +36,7 @@ body{
     animation: shadowthing 0.5s forwards;
     animation-delay: 0.2s;
     display:block;
-    background-color:rgba(255, 152, 0, 1);
+    background-color:#ff9800;
     padding:30px;
     border-radius: 10px;
     text-align:center;
