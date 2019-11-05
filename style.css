@@ -12,11 +12,6 @@
     90%{background-color:#ff5722;}
     100%{background-color:#f44336;}
 }
-@keyframes shadowthing
-{
-    0%{box-shadow: 0px 0px 0px black;}
-    100%{box-shadow: 15px 15px 0px black;top:0;left:0;}
-}
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -26,10 +21,12 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0px 20px 0px 20px;
-    background-image: url(duckspin.gif);
-    image-rendering: pixelated;
+    background-color:#000000;
+    animation: colours 10s infinite;
+}
+.duckspin{
+    background-image: url(duckspinbig.gif);
     background-position: center;
-    animation: colours 30s infinite;
 }
 .maincard{
     text-align:center;
@@ -37,11 +34,10 @@ body{
     animation-delay: 0.2s;
     display:block;
     background-color:#ff9800;
+    box-shadow: 0px 0px 0px 15px rgba(0,0,0,1);
     padding:30px;
     border-radius: 10px;
     text-align:center;
-    position:relative;
-    top:15px;left:15px;
 }
 .discord{
     background-color:#7289DA;

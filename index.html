@@ -1,6 +1,6 @@
 <head>
     <title>Duck Group</title>
-    <link rel="stylesheet" type="text/css" href="style.css?v=2">
+    <link rel="stylesheet" type="text/css" href="style.css?v=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#ff9800">
@@ -12,6 +12,8 @@
     <meta property="og:image" content="https://duckgroup.xyz/duckicon.png">
 </head>
 <body>
+    <canvas style="position: fixed;z-index: -3;" id="workofart"></canvas>
+    <div class="duckspin" style="width:100%;height:100%;position: absolute;z-index: -2;"></div>
 
     <section class="maincard">
         <img style="max-width:80%;width:300px;margin-bottom:10px;" src="duckgroup.svg">
@@ -35,5 +37,7 @@
             <img src="arrow.svg" style="height:25px;margin-left:10px;">
         </div></a>
     </section>
+
+    <script src="background.js"></script>
 
 </body>
