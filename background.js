@@ -45,12 +45,12 @@ stars.forEach(function(star) {
 });
 
 function draw(){
-    if (x<=window.innerWidth){
+    if (x<=window.innerWidth+50){
     ctx.globalCompositeOperation = 'destination-out';
     ctx.beginPath();
     ctx.moveTo(x, y);
     x = x + 10;
-    y = -(Math.sin(x/freq)*amp) - x*window.innerHeight/(window.innerHeight*window.innerWidth/1000) + window.innerHeight;
+    y = -(Math.sin(x/freq)*amp) - x*window.innerHeight/(window.innerHeight*window.innerWidth/750) + window.innerHeight;
     ctx.lineTo(x,y);
     ctx.stroke();
     }
