@@ -1,7 +1,13 @@
 var c = document.getElementById("workofart");
 var ctx = c.getContext("2d");
 
+var starcounter = document.getElementById("starcounter");
+
 var stars = []
+
+function updatestarcounter(){
+    starcounter.innerText = 'Stars: '+stars.length
+}
 
 function resize(){
     ctx.canvas.width  = window.innerWidth;
@@ -34,6 +40,14 @@ var y = window.innerHeight
 ctx.lineCap = "round";
 ctx.lineWidth = 30;
 ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
+window.addEventListener('click', function(event){
+    stars.push([event.clientX, event.clientY, 1, 1]);
+    stars.push([event.clientX, event.clientY, 1, -1]);
+    stars.push([event.clientX, event.clientY, -1, 1]);
+    stars.push([event.clientX, event.clientY, -1, -1]);
+    updatestarcounter();
+})
 
 ctx.globalCompositeOperation = 'source-over'
 ctx.fillStyle = "#FFFFFF";
@@ -72,3 +86,4 @@ function draw(){
 }
 
 requestAnimationFrame(draw);
+updatestarcounter();

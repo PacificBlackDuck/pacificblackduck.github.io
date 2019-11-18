@@ -23,6 +23,7 @@ body{
     padding: 0px 20px 0px 20px;
     background-color:#000000;
     animation: colours 10s infinite;
+    user-select: none;
 }
 .duckspin{
     background-image: url(duckspinbig.gif);
