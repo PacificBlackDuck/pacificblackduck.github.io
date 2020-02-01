@@ -56,6 +56,12 @@ body{
     align-items: center;
     padding:5px;
 }
+.textbox{
+    background-color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .counting{
     background-color:#5c4ecc;
     border-radius: 0px 0px 15px 15px;
