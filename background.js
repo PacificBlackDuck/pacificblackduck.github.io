@@ -35,8 +35,9 @@ ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 var freq = 50
 var amp = 250
-var x = 0
+var x = -50
 var y = window.innerHeight
+var z = 0
 ctx.lineCap = "round";
 ctx.lineWidth = 30;
 ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
@@ -59,15 +60,20 @@ stars.forEach(function(star) {
 });
 
 function draw(){
-    if (x<=window.innerWidth+50){
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, window.innerWidth, window.innerHeight);
     ctx.globalCompositeOperation = 'destination-out';
+    while (x<window.innerWidth+50){
     ctx.beginPath();
     ctx.moveTo(x, y);
     x = x + 10;
-    y = -(Math.sin(x/freq)*amp) - x*window.innerHeight/(window.innerHeight*window.innerWidth/750) + window.innerHeight;
+    y = -(Math.sin(x/freq+z)*amp) - x*window.innerHeight/(window.innerHeight*window.innerWidth/750) + window.innerHeight;
     ctx.lineTo(x,y);
     ctx.stroke();
     }
+    x=-50
+    y = window.innerHeight
+    z = z + 0.1
     ctx.globalCompositeOperation = 'source-over'
     stars.forEach(function(star) {
         ctx.fillStyle = "#000000";
