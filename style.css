@@ -25,7 +25,7 @@ body{
     animation: colours 10s infinite;
     user-select: none;
     margin:0;
-    height:100vh;
+    height:100%;
 }
 .duckspin{
     background-image: url(duckspinbig.gif);
