@@ -33,7 +33,7 @@ function randpos(xy){
 window.addEventListener('resize', resize);
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
-var freq = 50
+var freq = 4
 var amp = 250
 var x = -50
 var y = window.innerHeight
