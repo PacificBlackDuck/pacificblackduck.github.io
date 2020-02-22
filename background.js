@@ -5,10 +5,6 @@ var starcounter = document.getElementById("starcounter");
 
 var stars = []
 
-function updatestarcounter(){
-    starcounter.innerText = 'Stars: '+stars.length
-}
-
 function resize(){
     ctx.canvas.width  = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
@@ -33,8 +29,8 @@ function randpos(xy){
 window.addEventListener('resize', resize);
 ctx.canvas.width  = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
-var freq = 4
-var amp = 250
+var freq = 140
+var amp = 300
 var x = -50
 var y = window.innerHeight
 var z = 0
@@ -47,7 +43,6 @@ window.addEventListener('click', function(event){
     stars.push([event.clientX, event.clientY, 1, -1]);
     stars.push([event.clientX, event.clientY, -1, 1]);
     stars.push([event.clientX, event.clientY, -1, -1]);
-    updatestarcounter();
 })
 
 ctx.globalCompositeOperation = 'source-over'
@@ -92,4 +87,3 @@ function draw(){
 }
 
 requestAnimationFrame(draw);
-updatestarcounter();
