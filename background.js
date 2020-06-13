@@ -5,6 +5,20 @@ var starcounter = document.getElementById("starcounter");
 
 var stars = []
 
+var duckframes = [];
+
+var frame = 0;
+
+for (var i = 1; i <= 60; i++) {
+    if (i<10){
+        path = 'duckframes/frame0000'+i+'.png';
+    }
+    else{
+        path = 'duckframes/frame000'+i+'.png';
+    }
+    duckframes[i-1] = new Image();duckframes[i-1].src = path;
+}
+
 function resize(){
     ctx.canvas.width  = window.innerWidth;
     ctx.canvas.height = window.innerHeight;
@@ -83,7 +97,13 @@ function draw(){
         if (star[1] >= window.innerHeight){star[3] = star[3] * -1}
         if (star[1] <= 0){star[3] = star[3] * -1}
     });
+
+    ctx.drawImage(duckframes[frame],0,0)
+    frame+=1;
+    if(frame==60){
+        frame = 0;
+    }
     requestAnimationFrame(draw);
 }
 
-requestAnimationFrame(draw);
+draw();
