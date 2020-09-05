@@ -64,7 +64,7 @@ function draw(){
     while (x<window.innerWidth+50){
     ctx.beginPath();
     ctx.moveTo(x, y);
-    x = x + 10;
+    x = x + 30;
     y = -(Math.sin(x/freq+z)*amp) - x*window.innerHeight/(window.innerHeight*window.innerWidth/750) + window.innerHeight;
     ctx.lineTo(x,y);
     ctx.stroke();
@@ -76,7 +76,7 @@ function draw(){
 
 
     for (var i = 0; i < ducks.length; i++) {
-        duck = ducks[i]
+        var duck = ducks[i]
         ctx.drawImage(duckframes[duck.frame],duck.x,duck.y)
         duck.frame += 1;
         if(duck.frame==60){

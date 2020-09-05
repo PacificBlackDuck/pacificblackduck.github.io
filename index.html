@@ -1,8 +1,7 @@
 <head>
     <title>Duck Group</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="style.css?v=5">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css?v=6">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="theme-color" content="#000000">
     <link rel="icon" sizes="192x192" href="duckicon.png">
@@ -16,21 +15,26 @@
     <canvas style="position: fixed;z-index: -3;" id="workofart"></canvas>
 
     <section class="maincard">
-        <img style="max-width:80%;width:300px;margin-bottom:10px;" src="duckgroup.svg">
+        <img draggable="false" style="max-width:80%;width:300px;margin-bottom:10px;user-select: none;" src="duckgroup.svg">
         <div style="display:flex;">
-            <div class="discord">
-                <a href="https://discord.gg/7mNXydn">
-                    <p class="subtitle">discord</p>
-                    <img style="width:60px;" src="discord.svg">
-                </a>
-            </div>
-            <div class="steam">
-                <a href="https://steamcommunity.com/groups/Duck-Group">
-                    <p class="subtitle">steam</p>
-                    <img style="width:70px;margin-top:15px;" src="steam.svg">
-                </a>
-            </div>
+            
+            <a class="discord" href="https://discord.gg/7mNXydn">
+                <p class="subtitle">discord</p>
+                <img style="width:60px;" src="discord.svg">
+            </a>
+
+            <a class="steam" href="https://steamcommunity.com/groups/Duck-Group">
+                <p class="subtitle">steam</p>
+                <img style="width:70px;margin-top:15px;" src="steam.svg">
+            </a>
+
         </div>
+
+        <a href="https://art.duckgroup.xyz/"><div class="art">
+            <img src="art.png" style="width:30px;margin:10px;border-radius: 5px;">
+            <span style="color:white;font-size:20px;">Art</span>
+            <img src="arrow.svg" style="height:25px;margin-left:10px;">
+        </div></a>
 
         <a href="https://text.duckgroup.xyz/"><div class="textbox">
             <img src="textwall.gif" style="width:50px;margin-right:5px;">
@@ -45,6 +49,6 @@
         </div></a>
     </section>
 
-    <script src="background.js?v=11"></script>
+    <script src="background.js?v=12"></script>
 
 </body>
